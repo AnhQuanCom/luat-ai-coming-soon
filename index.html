@@ -1,32 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Coming Soon | Luat.AI</title>
+  <title>Luat.AI – Coming Soon</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #fff;
+      font-family: 'DM Sans', sans-serif;
+      color: white;
+      background: url('https://images.unsplash.com/photo-1555374018-13a8994ab246?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
       text-align: center;
+      backdrop-filter: brightness(60%) blur(2px);
     }
 
     h1 {
       font-size: 3rem;
-      margin-bottom: 0.5em;
+      margin: 0.5em 0;
     }
 
     p {
       font-size: 1.2rem;
       max-width: 600px;
+      margin: 0 auto;
     }
 
     .subscribe {
@@ -39,34 +47,52 @@
       border-radius: 5px;
       border: none;
       margin-right: 0.5em;
+      font-size: 1rem;
     }
 
     button {
       padding: 0.8em 1.2em;
       border: none;
       border-radius: 5px;
-      background-color: #00c9ff;
+      background-color: #00d4ff;
       color: #000;
+      font-weight: bold;
       cursor: pointer;
     }
 
     footer {
       position: absolute;
       bottom: 10px;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       opacity: 0.7;
+    }
+
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      input[type="email"] {
+        width: 180px;
+        margin-bottom: 1em;
+      }
+
+      button {
+        display: block;
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
   <h1>Luat.AI Coming Soon</h1>
-  <p>We’re building a platform to help lawyers and clients extract insights from Vietnamese legal documents with AI.</p>
+  <p>Nền tảng hỗ trợ phân tích và truy xuất văn bản pháp lý Việt Nam bằng trí tuệ nhân tạo.</p>
 
   <div class="subscribe">
-    <input type="email" placeholder="Your email address" />
-    <button>Notify Me</button>
+    <input type="email" placeholder="Nhập email của bạn" />
+    <button>Thông báo cho tôi</button>
   </div>
 
-  <footer>© 2025 Luat.AI</footer>
+  <footer>© 2025 Luat.AI. All rights reserved.</footer>
 </body>
 </html>
